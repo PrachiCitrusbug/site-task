@@ -6,38 +6,123 @@
     </head>
     <body>
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg bg-body-primary my-3">
-            <div class="container dflex">
-                <a href="#" id="nav-text-logo" class="navbar-brand">ONEDER</a>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item me-3">
-                            <a href="#" class="nav-link active" aria-current="page">Home</a>
-                        </li>
-                        <li class="nav-item me-3">
-                            <a href="#testimonials" class="nav-link" id="nav-testimonial">Testimonials</a>
-                        </li>
-                        <li class="nav-item me-3">
-                            <a href="#blogs" class="nav-link" id="nav-blog">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="container-fluid" id="nav-content">
+            <img src="assets/images/landing-page.jpg" alt="engineers working from the office" class="img-fluid" id="hero-img">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg bg-body">
+                    <div class="col">
+                        <a href="#" id="nav-text-logo" class="navbar-brand ms-4">ONEDER</a>
+                    </div>
+                    <div class="col-auto">
+                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="col-auto me-sm-2" id="navbarContent"> <!-- col-auto allows elements to take up as much space as needed-->
+                        <ul class="navbar-nav collapse navbar-collapse">
+                            <li class="nav-item me-3">
+                                <a href="#" class="nav-link active" aria-current="page">Home</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a href="#testimonials" class="nav-link" id="nav-testimonial">Testimonials</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a href="#blogs" class="nav-link" id="nav-blog">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-        </nav>
-        <!--Hero section-->
-        <div class="container-fluid" id="hero">
-            <img src="assets/images/landing-page.jpg" alt="engineers working from the office" class="img-responsive" id="hero-img">
-            <div class="rowoverlay row">
-                <h1 class="mb-3 mx-auto text-light">I'M CREATIVE ONE PAGE TEMPLATE BY COLORLIB</h1>
-                <button class="btn btn-primary mx-auto" id="hero-button">Get in Touch</button>
+            <!--Hero section content-->
+            <div class="row row-cols-1 justify-content-center gy-3" id="hero-content">
+                <h1 class="col text-light display-3 text-center fw-bold">I'M CREATIVE ONE PAGE TEMPLATE BY COLORLIB</h1>
+                <button class="btn btn-primary col contact-button" id="hero-button">Get in Touch</button>
             </div> 
         </div>
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center fw-bold my-4 text-primary">About Oneder</h1>
+            </div>
+            <div class="row row-cols-auto gx-4">
+                <div class="col-lg-6 py-lg-4 pb-sm-3 px-4 position-relative">
+                    <img src="assets/images/about-page.jpg" id="about-img" alt="computer engineer office">
+                    <div class="gradient-circle position-absolute"></div>
+                </div>
+                <div class="col-lg-6 py-lg-4 px-md-5 pb-sm-3">
+                    <div class="row row-cols-1 gy-3">
+                        <div class="col">
+                            <h2>For the next great business</h2>
+                        </div>
+                        <div class="col">
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptatibus commodi perferendis alias reprehenderit repellat quaerat.</p>
+                        </div>
+                        <div class="col">
+                            <ul class="text-muted about-text">
+                                <li>error harum esse</li>
+                                <li>perspiciatis ipsa officia</li>
+                                <li>quod nihil unde natus</li>
+                                <li>placeat totam velit illo</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-primary contact-button mt-2">Get in touch</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 justify-content-center">
+                <div class="col">
+                    <h1 class="text-center fw-bold my-4 text-primary">Our Team</h1>
+                </div>
+                <div class="col">
+                    <p class="text-center text-secondary fs-5 text-wrap" style="padding: 0 15%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod soluta fugit doloremque culpa placeat.</p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 mt-3">
+                <div class="col">
+                    <div class="card" style="border-radius:0px; border:none;">
+                        <img src="assets/images/team-mem-1.jpg" alt="a portrait picture" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Kaira Spencer</h5>
+                            <p class="card-text">Product Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border-radius:0px; border:none;">
+                        <img src="assets/images/team-mem-2.jpg" alt="a portrait picture" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Kyla Stewart</h5>
+                            <p class="card-text">Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border-radius:0px; border:none;">
+                        <img src="assets/images/team-mem-3.jpg" alt="a portrait picture" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Dave Simpson</h5>
+                            <p class="card-text">Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border-radius:0px; border:none;">
+                        <img src="assets/images/team-mem-4.jpg" alt="a portrait picture" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Tom Thompson</h5>
+                            <p class="card-text">Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
