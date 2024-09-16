@@ -67,6 +67,14 @@
     color: var(--bs-gray-400);
 }
 
+input {
+    border-radius: 50px !important;
+}
+ 
+textarea::placeholder{
+    color: var(--bs-gray-500) !important;
+}
+
 @media (min-width: 1350px) and (max-width: 1600px) {
     #hero-content{
         margin: 19% 15%;

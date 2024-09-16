@@ -3,6 +3,7 @@
     <head lang="en">
         <link rel="stylesheet" href="assets\styles\style.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <!--Navbar-->
@@ -122,7 +123,65 @@
                 </div>
             </div>
         </div>
-        
+        <div class="container-fluid mt-5 pt-5 pb-5" style="background-color: var(--bs-gray-200);">
+            <div class="row">
+                <h1 class="text-center fw-bold mt-3 text-primary">Contact Us</h1>
+            </div>
+            <div class="row row-cols-sm-1 row-cols-lg-3 mt-5 justify-content-center">
+                <div class="col">
+                    <div class="row row-cols-1 justify-content-center">
+                        <div class="col-auto"><i class="fa fa-map-marker" style="font-size:24px; color:var(--bs-blue);"></i></div>
+                        <div class="col">
+                            <address class="text-center text-wrap" style="color:var(--bs-gray-600); margin:2% 20%;">203, Fake St. Mountain View, San Francisco, California, USA</address>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row row-cols-1 justify-content-center">
+                        <div class="col-auto"><i class="fa fa-phone" style="font-size:36px; color:var(--bs-blue); font-size: 15px;"></i></div>
+                        <div class="col">
+                            <p class="text-center text-wrap" style="color:var(--bs-blue); margin:2% 20%; font-size: 15px;">+1 232 5454 642</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row row-cols-1 justify-content-center">
+                        <div class="col-auto"><i class="fa fa-envelope" style="font-size:24px; color:var(--bs-blue);"></i></div>
+                        <div class="col">
+                            <p class="text-center text-wrap" style="color:var(--bs-blue); margin:2% 20%; font-size: 15px;">youremail@domain.in</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container bg-white mt-5 p-5 mb-5">
+                <form class="row gy-3 gx-4">
+                    <h4 class="mb-5">Contact Form</h4>
+                    <div class="col-md-6">
+                      <label for="first-name" class="form-label">First Name</label>
+                      <input type="name" class="form-control" id="first-name">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="last-name" class="form-label">Last Name</label>
+                      <input type="name" class="form-control" id="last-name">
+                    </div>
+                    <div class="col-12">
+                      <label for="email-input" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email-input">
+                    </div>
+                    <div class="col-12">
+                      <label for="subject" class="form-label">Subject</label>
+                      <input type="text" class="form-control" id="subject">
+                    </div>
+                    <div class="col-12">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea  class="form-control" name="message" id="message" rows="7" placeholder="Write your notes or questions here...." style="border-radius: 25px;"></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary" style="border-radius: 50px; padding: 8px 25px;">Send Message</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
         <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
