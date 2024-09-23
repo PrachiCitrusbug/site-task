@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head lang="en">
+        <!--meta tag addition-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="assets\styles\style.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,21 +40,22 @@
                 </nav>
             </div>
             <!--Hero section content-->
-            <div class="row row-cols-1 justify-content-center gy-3" id="hero-content">
-                <h1 class="col text-light display-3 text-center fw-bold">I'M CREATIVE ONE PAGE TEMPLATE BY COLORLIB</h1>
-                <button class="btn btn-primary col contact-button" id="hero-button">Get in Touch</button>
+            <div class="hero-content" id="hero-content">
+                <h1 class="text-light display-3 text-center fw-bold">I'M CREATIVE ONE PAGE TEMPLATE BY COLORLIB</h1>
+                <button class="btn btn-primary contact-button" id="hero-button">Get in Touch</button>
             </div> 
         </div>
-        <div class="container">
+        <!--about section-->
+        <div class="container my-5">
             <div class="row">
-                <h1 class="text-center fw-bold my-4 text-primary">About Oneder</h1>
+                <h1 class="text-center fw-bold mb-5 text-primary">About Oneder</h1>
             </div>
-            <div class="row row-cols-auto gx-4">
-                <div class="col-lg-6 py-lg-4 pb-sm-3 px-4 position-relative">
+            <div class="row row-cols-auto gx-4 m-0">
+                <div class="col-lg-6 py-lg-4 pb-sm-3 position-relative">
                     <img src="assets/images/about-page.jpg" id="about-img" alt="computer engineer office">
                     <div class="gradient-circle position-absolute"></div>
                 </div>
-                <div class="col-lg-6 py-lg-4 px-md-5 pb-sm-3">
+                <div class="col-lg-6 py-lg-4 pb-sm-3">
                     <div class="row row-cols-1 gy-3">
                         <div class="col">
                             <h2>For the next great business</h2>
@@ -75,8 +78,9 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row row-cols-1 justify-content-center">
+        <!--team section-->
+        <div class="container-fluid">
+            <div class="row row-cols-1 mt-4 justify-content-center">
                 <div class="col">
                     <h1 class="text-center fw-bold my-4 text-primary">Our Team</h1>
                 </div>
@@ -84,37 +88,37 @@
                     <p class="text-center text-secondary fs-5 text-wrap" style="padding: 0 15%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod soluta fugit doloremque culpa placeat.</p>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 mt-3">
-                <div class="col">
+            <div class="row row-cols-auto mt-3 justify-content-center">
+                <div class="col-auto">
                     <div class="card" style="border-radius:0px; border:none;">
-                        <img src="assets/images/team-mem-1.jpg" alt="a portrait picture" class="card-img-top">
+                        <div class="img-wrapper"><img src="assets/images/team-mem-1.jpg" alt="a portrait picture" class="card-img-top"></div>
                         <div class="card-body">
                             <h5 class="card-title">Kaira Spencer</h5>
                             <p class="card-text">Product Manager</p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-auto">
                     <div class="card" style="border-radius:0px; border:none;">
-                        <img src="assets/images/team-mem-2.jpg" alt="a portrait picture" class="card-img-top">
+                        <div class="img-wrapper"><img src="assets/images/team-mem-2.jpg" alt="a portrait picture" class="card-img-top"></div>
                         <div class="card-body">
                             <h5 class="card-title">Kyla Stewart</h5>
                             <p class="card-text">Designer</p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-auto">
                     <div class="card" style="border-radius:0px; border:none;">
-                        <img src="assets/images/team-mem-3.jpg" alt="a portrait picture" class="card-img-top">
+                        <div class="img-wrapper"><img src="assets/images/team-mem-3.jpg" alt="a portrait picture" class="card-img-top"></div>
                         <div class="card-body">
                             <h5 class="card-title">Dave Simpson</h5>
                             <p class="card-text">Developer</p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-auto">
                     <div class="card" style="border-radius:0px; border:none;">
-                        <img src="assets/images/team-mem-4.jpg" alt="a portrait picture" class="card-img-top">
+                        <div class="img-wrapper"><img src="assets/images/team-mem-4.jpg" alt="a portrait picture" class="card-img-top"></div>
                         <div class="card-body">
                             <h5 class="card-title">Tom Thompson</h5>
                             <p class="card-text">Developer</p>
@@ -123,11 +127,13 @@
                 </div>
             </div>
         </div>
+        <!--contact-us section-->
         <div class="container-fluid mt-5 pt-5 pb-5" style="background-color: var(--bs-gray-200);">
             <div class="row">
                 <h1 class="text-center fw-bold mt-3 text-primary">Contact Us</h1>
             </div>
-            <div class="row row-cols-sm-1 row-cols-lg-3 mt-5 justify-content-center">
+            <!--contact details-->
+            <div class="row row-cols-1 row-cols-lg-3 mt-5 justify-content-center">
                 <div class="col">
                     <div class="row row-cols-1 justify-content-center">
                         <div class="col-auto"><i class="fa fa-map-marker" style="font-size:24px; color:var(--bs-blue);"></i></div>
@@ -153,6 +159,7 @@
                     </div>
                 </div>
             </div>
+            <!--contact form-->
             <div class="container bg-white mt-5 p-5 mb-5">
                 <form class="row gy-3 gx-4">
                     <h4 class="mb-5">Contact Form</h4>
