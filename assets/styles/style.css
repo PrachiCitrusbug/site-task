@@ -1,16 +1,5 @@
-#nav-content{
-    position:relative;
-}
-
-#hero-img{
+nav, header, main, section, article, footer{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position:absolute;
-    top:0%;
-    left:0%;
-    z-index: -1;
-    overflow-x: hidden;
 }
 
 #nav-text-logo{
@@ -24,10 +13,29 @@
     color: black !important;
     line-height: 0.25rem !important;
     font-weight: 500;
+    font-size: 1.5rem;
 }
 
 .nav-link.active{
     color: var(--bs-blue) !important;
+}
+
+.hero-content{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('../images/landing-page.jpg'); /*hero image*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+}
+
+.hero-content > .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transform: translateY(50%);
+    width: 50%;
 }
 
 .contact-button {
@@ -36,14 +44,6 @@
     border-radius: 50px !important;
 }
 
-.hero-content{
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 /* #hero-content{
     margin: 21% 25%;
 } */
@@ -79,6 +79,7 @@
     object-fit: cover;
     border-radius: 0% !important;
 }
+
 .card-text{
     color: var(--bs-gray-400);
 }
@@ -90,6 +91,47 @@ input {
 textarea::placeholder{
     color: var(--bs-gray-500) !important;
 }
+
+ul > li{
+    padding-bottom: 8px;
+}
+
+.about .contact-button{
+    width: 150px !important; 
+}
+
+.info-container{
+    justify-content: space-between;
+}
+
+.info-container p.head{
+    color: white;
+}
+
+.info-container p.content{
+    color: rgba(255, 255, 255, 0.4);
+}
+
+
+.socials p.content{
+    display: inline;
+    padding-right: 40px;
+}
+
+.socials p.content:last-child{
+    padding:0;
+}
+
+footer hr{
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+p.copyright{
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+
 
 @media (max-width: 1200px) {
     .gradient-circle{
